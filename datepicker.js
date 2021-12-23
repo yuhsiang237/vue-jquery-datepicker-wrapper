@@ -9,7 +9,7 @@
                     self.$emit("input", date);
                 }
             })
-            if (!(this.value == null || this.value == '')) {
+            if (!(this.value === null || this.value === '')) {
                 $(this.$el).datepicker("setDate", new Date(this.value));
             }
         },
